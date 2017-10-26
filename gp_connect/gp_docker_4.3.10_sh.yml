@@ -11,9 +11,8 @@
         - -exc
         - |	
           date
-          source /usr/local/greenplum-db/greenplum_path.sh
+          su gpadmin source /usr/local/gpdb/greenplum_path.sh
           # gpstop -v -a -d /data/master/gpseg-1 -l /home/gpadmin/stop_log.log
           # gpstart -v -d /data/master/gpseg-1 -l /home/gpadmin/start_log.log
-          gpstate -d /data/master/gpseg-1 -l /home/gpadmin/state_log.log
-          /usr/local/greenplum-db/bin/psql -c "select current_date"
-        user: gpadmin
+          #gpstate -d /data/master/gpseg-1 -l /home/gpadmin/state_log.log
+          su gpadmin /usr/local/gpdb/bin/psql -c "select current_date"
