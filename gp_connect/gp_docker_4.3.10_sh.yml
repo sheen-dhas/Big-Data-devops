@@ -12,4 +12,4 @@
         - |	
           cd src-code/gp_connect
           chmod 777 script_gp.sh
-         cat date
+          cat date
