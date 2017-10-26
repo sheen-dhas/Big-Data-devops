@@ -10,6 +10,13 @@
         args:
         - -exc
         - |	
-          cd src-code/gp_connect		
+          cd src-code/gp_connect
+          chmod 777 script_gp.sh		
+      run:
+        path: sh
+        args:
+        - -exc
+        - |	
+          cd src-code/gp_connect	
           ./script_gp.sh
-        user: gpadmin    
+        user: gpadmin
