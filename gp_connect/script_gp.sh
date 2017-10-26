@@ -1,4 +1,3 @@
-#!/bin/sh
 
 
 /usr/local/greenplum-db/bin/gpstate	
