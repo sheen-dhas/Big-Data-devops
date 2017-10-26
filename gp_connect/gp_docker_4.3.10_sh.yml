@@ -11,5 +11,6 @@
         - -exc
         - |	
           cd src-code/gp_connect
-          chmod 777 script_gp.sh
           date
+          /usr/local/greenplum-db/bin/gpstate 
+        user: gpadmin
