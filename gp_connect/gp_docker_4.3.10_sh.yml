@@ -12,5 +12,5 @@
         - |	
           date
           source /usr/local/greenplum-db/greenplum_path.sh
-          /usr/local/greenplum-db/bin/gpstate 
+          gpstate -d /data/master/gpseg-1 -l /home/gpadmin/st_log.log 
         user: gpadmin
