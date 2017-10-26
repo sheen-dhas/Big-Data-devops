@@ -12,6 +12,7 @@
         - |	
           date
           source /usr/local/greenplum-db/greenplum_path.sh
+          gpstart -v -d /gpdata/master/gpseg-1 -l /home/gpadmin/start_log.log
           gpstate -d /gpdata/master/gpseg-1 -l /home/gpadmin/state_log.log
           /usr/local/greenplum-db/bin/psql -c "select current_date"
         user: gpadmin
