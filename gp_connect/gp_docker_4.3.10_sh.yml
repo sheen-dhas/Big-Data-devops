@@ -11,6 +11,5 @@
         - -exc
         - |	
           cd src-code/gp_connect
-          su root chmod 777 script_gp.sh
-          ./script_gp.sh
-        user: gpadmin
+          chmod 777 script_gp.sh
+          su gpadmin ./script_gp.sh
