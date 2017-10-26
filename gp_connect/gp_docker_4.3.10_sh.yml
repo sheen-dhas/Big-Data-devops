@@ -10,7 +10,7 @@
         args:
         - -exc
         - |	
-          cd src-code/gp_connect
           date
+          source /usr/local/greenplum-db/greenplum_path.sh
           /usr/local/greenplum-db/bin/gpstate 
         user: gpadmin
