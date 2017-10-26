@@ -1,0 +1,16 @@
+      platform: linux
+      image_resource:
+        type: docker-image
+        source:
+          repository: pivotaldata/gpdb4310
+      inputs:
+      - name: src-code
+      run:
+        path: sh
+        args:
+        - -exc
+        - |	
+          cd src-code/gp_connect
+          chmod 777 script_gp.sh		
+          ./script_gp.sh	
+        user: gpadmin
