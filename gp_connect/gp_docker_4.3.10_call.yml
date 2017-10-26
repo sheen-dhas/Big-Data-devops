@@ -1,0 +1,14 @@
+---
+resources:
+- name: src-code
+  type: git
+  source:
+    uri: https://github.com/sheen-dhas/Big-Data-devops.git
+
+jobs:
+- name: gpdb4310-git
+  public: true
+  plan:
+  - get: src-code
+  - task: run
+    file: src-code/gp_connect/gp_docker_4.3.10_sh.yml
