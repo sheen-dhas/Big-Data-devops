@@ -11,6 +11,5 @@
         - -exc
         - |	
           date
-          make installcheck-good
           createdb test
         user: gpadmin
