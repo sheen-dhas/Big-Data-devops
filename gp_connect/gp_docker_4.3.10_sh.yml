@@ -2,7 +2,7 @@
       image_resource:
         type: docker-image
         source:
-          repository: pivotaldata/centos-gpdb-dev
+          repository: pivotaldata/centos-gpdb-dev:7-gcc6.2-llvm3.7-gpadmin
       inputs:
       - name: src-code
       run:
