@@ -19,4 +19,4 @@ run:
           ##chmod 777 spark-submit
           cd resource-tutorial/hbase_devops
           chmod 777 hbase_shell.sh
-          ./hbase_shell.sh
+          hbase_shell.sh
