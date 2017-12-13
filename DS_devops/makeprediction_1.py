@@ -3,6 +3,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 def predict(inputFeatures):
 
+    inputFeatures = [[7.7,2.6,6.9,2.3]]    
     iris = datasets.load_iris()
 
     knn = KNeighborsClassifier()
@@ -19,10 +20,11 @@ def predict(inputFeatures):
         predictString = 'null3'
 
    #return predictString
-    print predictString
+    print '################## RESULT ##########################################################'
+    print 'Input(slength, swidth, plength , pwidth) :', inputFeatures
+    print "Predicted species : " ,  predictString
+    print '####################################################################################'    
 
 
 if __name__ == '__main__':
-  # predict([[1.5,0.7,1.3,0.3],[1.5,0.7,1.3,0.3]])
-    predict([[7.0,3.2,4.7,1.4],[7.0,3.2,4.7,1.4]])
-  # predict([[1.5,0.7,1.3,0.3],[7.0,3.2,4.7,1.4]])
+    predict()
