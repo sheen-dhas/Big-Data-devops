@@ -1,7 +1,7 @@
 from sklearn import datasets
 from sklearn.neighbors import KNeighborsClassifier
 
-def predict(inputFeatures):
+def predict():
 
     inputFeatures = [[7.7,2.6,6.9,2.3]]    
     iris = datasets.load_iris()
